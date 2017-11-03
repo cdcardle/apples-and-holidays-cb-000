@@ -73,5 +73,5 @@ def all_holidays_with_bbq(holiday_hash)
       d.any?("BBQ") ? array << c : nil
     end
   end
-  array
+  return array
 end
