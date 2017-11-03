@@ -70,7 +70,7 @@ def all_holidays_with_bbq(holiday_hash)
   array = []
   holiday_hash.each do |a, b|
     b.each do |c, d|
-      d.any?(&:"BBQ") ? (array << c) : nil
+      d.any?{|x| x == "BBQ"} ? (array << c) : nil
     end
   end
   return array
